@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link for css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>HealthCare</title>
+</head>
+
+<body>
+    <br>
+
+    <!-- code for home  -->
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> HealthCare</a>
+
+        <nav class="navbar">
+            <a href="#background-image"> <span>HOME<i class="fa-solid fa-angle-down"></i></span></a>
+            <a href="#pages">PAGES<i class="fa-solid fa-angle-down"></i></a>
+            <a href="#services">DEPARTMENT<i class="fa-solid fa-angle-down"></i></a>
+            <a href="#docslayer">DOCTORS<i class="fa-solid fa-angle-down"></i></a>
+            <a href="#gallery">GALLERY<i class="fa-solid fa-angle-down"></i></a>
+            <a href="#blogs">BLOGS<i class="fa-solid fa-angle-down"></i></a>
+            <a href="#footer">CONTACT</a>
+            <i class="fa fa-search"></i> <button id="search" href="">MAKE APPOINTMENT</button>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <!-- code for form and popup -->
+
+    <div class="appointment">
+
+    </div>
+    <div class="popup">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Your last email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Phone no.</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="number" name="number" placeholder="Your last number..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:5rem"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" placeholder="Write some message.."
+                            style="height:10rem"></textarea>
+                    </div>
+                </div>
+
+                <label>
+                    Start Date <br /><br />
+                    <input type="date" name="arrival" value="Today" />
+                </label>
+
+                <label>
+                    End Date <br /><br />
+                    <input type="date" name="departure" data-value="7" value="After one week" />
+                </label>
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="popupbtn"><button><i class="fa-solid fa-xmark"></i></button></div>
+    </div>
+
+
+    <!-- code for background-image  -->
+    <div class="overlayside">
+
+    </div>
+
+    <div class="background-image" id="background-image">
+
+
+        <div class="formfill">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Your last email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Phone no.</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="number" name="number" placeholder="Your last number..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:5rem"></textarea>
+                    </div>
+                </div>
+                <div class="row" id="msg">
+                    <div class="col-25">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" placeholder="Write some message.."
+                            style="height:10rem"></textarea>
+                    </div>
+                </div>
+
+                <label id="date">
+                    Start Date <br /><br />
+                    <input type="date" name="arrival" value="Today" />
+                </label>
+
+                <label>
+                    End Date <br /><br />
+                    <input type="date" name="departure" data-value="7" value="After one week" />
+                </label>
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+
+
+        <div id="menu" class="sidemenu">
+
+
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="Your last email..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Phone no.</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="number" name="number" placeholder="Your last number..">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:5rem"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="message" name="message" placeholder="Write some message.."
+                                style="height:10rem"></textarea>
+                        </div>
+                    </div>
+
+                    <label id="date">
+                        Start Date <br /><br />
+                        <input type="date" name="arrival" value="Today" />
+                    </label>
+
+                    <label>
+                        End Date <br /><br />
+                        <input type="date" name="departure" data-value="7" value="After one week" />
+                    </label>
+
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </div>
+
+            <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+
+        </div>
+
+        <button onclick="openFunction()" id="req">Request</button>
+
+    </div>
+
+    <!-- code for pages -->
+
+    <div class="pages" id="pages">
+        <div class="main-chose">
+            <div class="inner-chose">
+                <img src="img/doc.jpg" alt="">
+            </div>
+
+            <div class="inner-chose">
+                <h2> HAS BEEN WORKING SINCE 2000</h2>
+
+                <div class="inner-chose-content">
+                    <h1>A Great Place to Work.A Great Place <br>to Receive Care.Leading Medicine.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error explicabo
+                        possimus fugit fuga inventore tenetur natus,Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Alias ipsum iste beatae officiis iusto, numquam officia, sequi odio illo rerum adipisci
+                        voluptatibus nulla rem facere. </p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem expedita cum error a
+                        quisquam consectetur quas est explicabo adipisci doloremque. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Asperiores, dicta. </p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus consequatur voluptatum dicta,
+                        culpa repellat aut et in eveniet. Quos, harum!</p>
+                    <br><br>
+                </div>
+
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fa fa-play-circle"></i>
+                    </div>
+                    <div class="icon-content">
+                        <h3>LET'S SEE OUR INTRO VIDEOS</h3>
+                        <p>Lorem consectetur adipisicing elit. Recusandae error explicabo
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- code for services -->
+
+    <div class="services" id="services">
+        <h1 class="heading"> our <span>services</span> </h1>
+        <p>Lorem consectetur adipisicing Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <br>
+            sit, amet consectetur adipisicing elit. Tempore, officiis.
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-tents"></i>
+                <h3>outdoor checkups</h3>
+
+                <ul style="list-style-type:circle;">
+                    <li>Height/weight check</li>
+                    <li>Blood pressure check</li>
+                    <li>Cholesterol level check</li>
+                    <li>Blood sugar check</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-procedures"></i>
+                <h3>Opration Theatre</h3>
+                <ul style="list-style-type:circle;">
+                    <li>Utility Columns</li>
+                    <li>Surgical and Exam Lights</li>
+                    <li>Strecthers and Accessories</li>
+                    <li>Cushions and Mattresses</li>
+                </ul>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-prescription"></i>
+                <h3> Pharmacy</h3>
+                <ul style="list-style-type:circle;">
+                    <li>Drug Side Effects</li>
+                    <li>Treatment Option </li>
+                    <li>International Drug Database</li>
+                    <li>Breatfeeding Warning</li>
+                </ul>
+            </div>
+            <div class="box">
+                <i class="fa fa-medkit"></i>
+                <h3>Blood Test</h3>
+                <ul style="list-style-type:circle;">
+                    <li>Blood glucose test</li>
+                    <li>Calcium blood test </li>
+                    <li>Cardiac enzymes</li>
+                    <li>Breatfeeding Warning</li>
+                </ul>
+            </div>
+            <div class="box">
+                <i class="fas fa-user-md"></i>
+                <h3>Qualified doctors</h3>
+                <ul style="list-style-type:circle;">
+                    <li>Allergists/immunologists</li>
+                    <li>Anestheslologists </li>
+                    <li>Colon and Rectal Surgeons</li>
+                    <li>Criticl Care Medicine specialists</li>
+                </ul>
+            </div>
+            <div class="box">
+                <i class="fas fa-ambulance"></i>
+                <h3>24/7 Emergency Care</h3>
+                <ul style="list-style-type:circle;">
+                    <li>Emergency Assistents</li>
+                    <li>Legal Assistents </li>
+                    <li>Medical Assistents</li>
+                    <li>Notarial Services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- code for doctors -->
+
+    <div class="docslayer" id="docslayer">
+        <h1 class="heading"> meet our <span>specialists</span> </h1>
+        <p>Lorem consectetur adipisicing Lorem Lorem ipsum dolor sit amet. ipsum dolor sit Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit.
+        </p>
+        <div class="docs">
+
+            <div class="doc1" id="docc1">
+
+                <div class="docl">
+                    <div class="doc-wrap">
+                        <div class="doc-track">
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc2.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc1.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc2.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc11.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc8.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc3.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc4.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doc1" id="docc1">
+
+                <div class="docl">
+                    <div class="doc-wrap">
+                        <div class="doc-track">
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/clients8.jpeg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc11.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc2.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc8.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc4.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/h11.jpeg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="docs">
+
+            <div class="doc1" id="docc1">
+
+                <div class="docl">
+                    <div class="doc-wrap">
+                        <div class="doc-track">
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc11.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc1.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc2.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc3.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc1.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc4.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc8.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doc1" id="docc1">
+
+                <div class="docl">
+                    <div class="doc-wrap">
+                        <div class="doc-track">
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc5.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc2.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc1.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc8.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>------MAKE APPOINTMENT-------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/h3.jpeg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>-----MAKE APPOINTMENT------</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/clients8.jpeg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+                            <div class="docslide3">
+                                <div class="bar">
+                                    <img src="img/doc3.jpg" alt="">
+                                    <!-- <span><i class="fa-solid fa-plus"></i></span> -->
+                                    <h2>Gortiela Beckett</h2>
+                                    <h1>SURGEON</h1>
+                                    <h3>----MAKE APPOINTMENT----</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <span class="arrowdoc prewdoc" onclick="controller(-1)">&#10094;</span>
+        <span class="arrowdoc nxtdoc" onclick="controller(1)">&#10095;</span>
+    </div>
+    <!-- code for  Health-Tips -->
+
+    <div class="slide-container">
+        <h1 class="heading">health <span>tips</span> </h1>
+        <p>Lorem consectetur adipisicing Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <br>
+            sit, amet consectetur adipisicing elit. Tempore, officiis.
+        </p>
+        <div class="hii">
+
+            <div class="mySlides fade hel">
+
+                <div class="main-chose">
+                    <div class="inner-chose">
+                        <img src="img/ldoc.jpg" alt="">
+                    </div>
+
+                    <div class="inner">
+                        <div class="shape"> </div>
+                        <div class="doc-name">
+                            <h2> DR.ROZZEY</h2>
+                            <h3>MPH,Medicine,Surgery</h3>
+                        </div>
+                        <div class="inner-chose-content">
+                            <h1>How to live a healthy lifestyle?</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error explicabo
+                                possimus fugit fuga inventore tenetur natus,Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit. Alias ipsum iste beatae officiis iusto, numquam officia, sequi odio illo rerum
+                                adipisci
+                                voluptatibus nulla rem.t</p>
+                            <h1>FOLLOW THE INSTRUCTIONS</h1>
+                            <UL style="list-style-type:none;">
+
+                                <li><button class="openbtn"><i class="fa-solid fa-plus"></i></button>Dont just about
+                                    the
+                                    things you cannot help</li>
+                                <div class="opentext">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                                <li><button class="openbtn1"><i class="fa-solid fa-plus"></i></button>Eat Healthy,
+                                    work
+                                    better, do gardening</li>
+                                <div class="opentext1">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+
+                                <li><button class="openbtn2"><i class="fa-solid fa-plus"></i></button> Some
+                                    relationship
+                                    can
+                                    kill you, Avoid them</li>
+                                <div class="opentext2">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                                <li><button class="openbtn3"><i class="fa-solid fa-plus"></i></button>Focus on the
+                                    good
+                                    things like you</li>
+                                <div class="opentext3">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                            </UL>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="mySlides fade">
+
+                <div class="main-chose">
+                    <div class="inner-chose">
+                        <img src="img/h8.jpeg" alt="">
+                    </div>
+
+                    <div class="inner">
+                        <div class="shape"> </div>
+                        <div class="doc-name">
+                            <h2> DR.ANGLENA</h2>
+                            <h3>MPH,Medicine,Surgery</h3>
+                        </div>
+                        <div class="inner-chose-content">
+                            <h1>How to live a healthy lifestyle?</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error explicabo
+                                possimus fugit fuga inventore tenetur natus,Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit. Alias ipsum iste beatae officiis iusto, numquam officia, sequi odio illo rerum
+                                adipisci
+                                voluptatibus nulla rem.t</p>
+                            <h1>FOLLOW THE INSTRUCTIONS</h1>
+                            <UL style="list-style-type:none;">
+
+                                <li><button class="openbtn4"><i class="fa-solid fa-plus"></i></button>Dont just
+                                    about
+                                    the
+                                    things you cannot help</li>
+                                <div class="opentext4">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                                <li><button class="openbtn5"><i class="fa-solid fa-plus"></i></button>Eat Healthy,
+                                    work
+                                    better, do gardening</li>
+                                <div class="opentext5">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+
+                                <li><button class="openbtn6"><i class="fa-solid fa-plus"></i></button> Some
+                                    relationship
+                                    can
+                                    kill you, Avoid them</li>
+                                <div class="opentext6">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                                <li><button class="openbtn7"><i class="fa-solid fa-plus"></i></button>Focus on the
+                                    good
+                                    things like you</li>
+                                <div class="opentext7">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                            </UL>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <div class="main-chose">
+                    <div class="inner-chose">
+                        <img src="img/h9.jpeg" alt="">
+                    </div>
+
+                    <div class="inner">
+                        <div class="shape"> </div>
+                        <div class="doc-name">
+                            <h2> DR.DEZZY BEL</h2>
+                            <h3>MPH,Medicine,Surgery</h3>
+                        </div>
+                        <div class="inner-chose-content">
+                            <h1>How to live a healthy lifestyle?</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error explicabo
+                                possimus fugit fuga inventore tenetur natus,Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit. Alias ipsum iste beatae officiis iusto, numquam officia, sequi odio illo rerum
+                                adipisci
+                                voluptatibus nulla rem.t</p>
+                            <h1>FOLLOW THE INSTRUCTIONS</h1>
+                            <UL style="list-style-type:none;">
+
+                                <li><button class="openbtn8"><i class="fa-solid fa-plus"></i></button>Dont just
+                                    about
+                                    the
+                                    things you cannot help</li>
+                                <div class="opentext8">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                                <li><button class="openbtn9"><i class="fa-solid fa-plus"></i></button>Eat Healthy,
+                                    work
+                                    better, do gardening</li>
+                                <div class="opentext9">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+
+                                <li><button class="openbtn10"><i class="fa-solid fa-plus"></i></button> Some
+                                    relationship
+                                    can
+                                    kill you, Avoid them</li>
+                                <div class="opentext10">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                                <li><button class="openbtn11"><i class="fa-solid fa-plus"></i></button>Focus on the
+                                    good
+                                    things like you</li>
+                                <div class="opentext11">
+                                    <h5>Read More About Health....</h5>
+                                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, impedit.
+                                        Lorem,
+                                        ipsum
+                                        dolor sit amet consectetur adipisicing elit. Non nihil saepe maiores
+                                        excepturi
+                                        eum
+                                        vitae?</h6>
+                                </div>
+                            </UL>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="arrows prev" onclick="controllers(-1)">&#10094;</span>
+        <span class="arrows nxt1" onclick="controllers(1)">&#10095;</span>
+
+
+    </div>
+
+
+    <!-- code for Gallery -->
+
+    <div class="gallery" id="gallery">
+
+        <div class="gal">
+            <div class="slider-wrap">
+                <div class="slider-track">
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-users"></i></span>
+                            <h1>230<sup>+</sup></h1>
+                            <h2>SATISFIED PATIENTS</h2>
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-user-md"></i></span>
+                            <h1>89<sup>+</sup></h1>
+                            <h2>REGULAR DOCTORS</h2>
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-hospital"></i></span>
+                            <h1>50<sup>+</sup></h1>
+                            <h2>DEPARTMENT</h2>
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-user"></i></span>
+                            <h1>2348<sup>+</sup></h1>
+                            <h2>SERVANT</h2>
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-users"></i></span>
+                            <h1>230<sup>+</sup></h1>
+                            <h2>SATISFIED PATIENTS</h2>
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-user-md"></i></span>
+                            <h1>89<sup>+</sup></h1>
+                            <h2>REGULAR DOCTORS</h2>
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-hospital"></i></span>
+                            <h1>50<sup>+</sup></h1>
+                            <h2>DEPARTMENT</h2>
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="bar">
+                            <span><i class="fa fa-user"></i></span>
+                            <h1>2348<sup>+</sup></h1>
+                            <h2>SERVANT</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- code for blogs -->
+
+    <div class="blogs" id="blogs">
+        <h1 class="heading"> recent <span>blogs</span> </h1>
+        <p>Lorem consectetur adipisicing Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <br>
+            sit, amet consectetur adipisicing elit. Tempore, officiis.
+        </p>
+        <div class="box-blogs">
+            <div class="box">
+                <img src="img/blog1.jpg" alt="">
+                <i class="fa-solid fa-images"></i>
+                <div class="name">
+                    <h1>ADMIN</h1>
+                    <h2>15 JUNE,2019</h2>
+                </div>
+                <div class="boxdis">
+                    <h1>Increasing In Especially Inquietude Companies Acceptance</h1>
+                    <P>Genral enquire picture letters garrets on offices of no.Say one hearing exicited
+                        eveninig all inhabit though you.
+                    </P>
+                    <button> READ MORE ></button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/blog2.jpg" alt="">
+                <i class="fa-solid fa-video"></i>
+                <div class="name">
+                    <h1>ADMIN</h1>
+                    <h2>17 AUGUEST,2019</h2>
+                </div>
+                <div class="boxdis">
+                    <h1>Middleton As Pretended Listening He Smallness Perceived.</h1>
+                    <P>Genral enquire picture letters garrets on offices of no.Say one hearing exicited
+                        eveninig all inhabit though you.
+                    </P>
+                    <button> READ MORE > </button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/blog3.jpg" alt="">
+                <i class="fa-solid fa-image"></i>
+                <div class="name">
+                    <h1>ADMIN</h1>
+                    <h2>25 SEPTEMBER,2019</h2>
+                </div>
+                <div class="boxdis">
+                    <h1>Offended packages pleasant Remainder Recommend</h1>
+                    <P>Genral enquire picture letters garrets on offices of no.Say one hearing exicited
+                        eveninig all inhabit though you.
+                    </P>
+                    <button> READ MORE > </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- code for clients  -->
+
+    <div class="clients">
+
+        <h1 class="heading"> our <span>clients</span> </h1>
+        <p>Lorem consectetur adipisicing Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <br>
+            sit, amet consectetur adipisicing elit. Tempore, officiis.
+        </p>
+
+        <div class="slide-wrapper">
+            <div class="slide-tracker">
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client1.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/clients8.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client3.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client4.jpg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client5.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client6.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client7.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/clients8.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client2.jpg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client3.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client4.jpg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client5.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="box">
+                        <img src="img/client6.jpeg" alt="">
+                        <h3>bel jhonshan</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="share2">
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                            <a href="#" class="fa-solid fa-star"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- code for brands -->
+
+    <div class="brand">
+        <div class="slider-wrapper">
+            <div class="slider-tracker">
+                <div class="slide">
+                    <img src="img/brand.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand10.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand11.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand3.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/brand4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand9.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand12.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand13.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand14.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand15.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/brand9.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- code for About   -->
+
+    <div class="footer" id="footer">
+        <div class="about">
+            <div class="box">
+                <h1>ABOUT</h1>
+                <p>Ecellence decicively nay man yet
+                    Impression for contrasted remarkably.
+                    There spoke happy for you are out.
+                    Fertile how old address.
+                </p>
+                <h2>OPENING HOURS</h2>
+                <div class="time">
+                    Mon - Tues: 6.00 am - 10.00 pm
+                </div>
+                <div class="time">
+                    Wed - Thurs: 8.00 am - 10.00 pm
+                </div>
+                <p>Sun: <button>Closed</button></p>
+            </div>
+            <div class="box">
+                <h1>OUR DEPARTMENT</h1>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span> Medicine and Health</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span> Dental Care and Surgery</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span> Eye Treatment</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span> Children Care </li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span> Nuclear magnetic </li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span> Traumantology </li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span> X-ray </li>
+                </ul>
+            </div>
+            <div class="box-2">
+                <h1>LATEST TWEETS</h1>
+                <P><span>@Becare</span> Looking for an awesome CREATIVE WordPress Theme? Find it
+                    here: <span>http://t.co/0WWEMQEQ48</span></P>
+                <h2><span><i class="fa-brands fa-twitter"></i></i></span>01 year ago</h2>
+                <P><span>@Jisham</span> It is a long established fact that a reader will be distracted by the
+                    readable. Find it
+                    here: <span>http://t.co/0WWEMQEQ48</span></P>
+                <h2><span><i class="fa-brands fa-twitter"></i></i></span> 02 days ago </h2>
+            </div>
+            <div class="box-3">
+                <h1>CONTACT</h1>
+                <div class="contact">
+                    <h2><span><i class="fa fa-phone" aria-hidden="true"></i></span> PHONE </h2>
+                    <p>+123 456 7890</p>
+                </div>
+                <div class="contact">
+                    <h2><span><i class="fa fa-envelope" aria-hidden="true"></i></span> EMAIL </h2>
+                    <p> support@validtheme.com</p>
+                </div>
+                <div class="contact">
+                    <h2><span><i class="fa fa-briefcase" aria-hidden="true"></i></span> OFFICE </h2>
+                    <p>123 6th St. Melbourne, FL 32904</p>
+                </div>
+                <h2>SUBSCRIBE NEWSLETTER</h2>
+                <div class="newsletter">
+                    <form method="post" class="form-inline">
+                        <input name="EMAIL" id="email" placeholder="Enter Your Email" class="form-control" type="email">
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="underline">
+            <div class="line1">
+                <P>@copyright 2022.All Rights Reserved by AnnexLogics </P>
+            </div>
+            <div class="line2">
+                <h2> Terms of User </h2>
+                <h2>License </h2>
+                <h2> Support</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
